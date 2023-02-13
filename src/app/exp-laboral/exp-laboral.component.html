@@ -1,0 +1,27 @@
+<!---exp laboral titulo-->
+<div class="container shadow-lg p-3 mb-5 bg-body rounded">
+  <br />
+  <div class="container">
+    <div class="shadow-lg p-3 mb-5 bg-body rounded">
+      <h3>EXPERIENCIA LABORAL</h3>
+    </div>
+  </div>
+  <br /><br />
+  <!--fin titulo-->
+
+  <div>
+    <ul class="deco">
+      <li *ngFor="let expLaboral of trabajosList">
+        <div>
+          <img [src]="expLaboral.logos" [ngClass]="'foto'" />
+          <br /><br />
+          <p id="parrafosExpLab">
+            {{ expLaboral.cargo }} {{ expLaboral.lugar }}
+            {{ expLaboral.fecha }}
+          </p>
+          <br />
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
